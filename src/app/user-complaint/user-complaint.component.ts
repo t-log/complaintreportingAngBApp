@@ -18,7 +18,7 @@ export class UserComplaintComponent {
         if(response.status=="success"){
           alert("Complaint added");
           
-          this.router.navigate(['/'])   //viewusercomplaint
+          // this.router.navigate(['/'])   //viewusercomplaint
         }
         else{
         //  alert("Login Failed!:(")

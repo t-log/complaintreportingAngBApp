@@ -13,4 +13,5 @@ export class ApiService {
   getUserDetailsById=(dataToSend:any)=>{return this.http.post("http://localhost:8080/userbyid",dataToSend)}
 
   addUserComplaint=(dataToSend:any)=>{return this.http.post("http://localhost:8080/addUserComplaint",dataToSend)}
+  getUserComplaint=(dataToSend:any)=>{return this.http.post("http://localhost:8080/getUserComplaint",dataToSend)}
 }

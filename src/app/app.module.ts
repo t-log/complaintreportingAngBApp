@@ -13,6 +13,7 @@ import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.compo
 import { NavBarAdminComponent } from './nav-bar-admin/nav-bar-admin.component';
 import { NavBarUserComponent } from './nav-bar-user/nav-bar-user.component';
 import { UserComplaintComponent } from './user-complaint/user-complaint.component';
+import { UserComplaintviewComponent } from './user-complaintview/user-complaintview.component';
 
 const myRoute:Routes=[{"path":"",component:AdminLoginComponent},
                       {"path":"admindash",component:AdminDashboardComponent},
@@ -20,6 +21,7 @@ const myRoute:Routes=[{"path":"",component:AdminLoginComponent},
                       {"path":"userprofile",component:UserProfileComponent},
                       {"path":"userregister",component:UserRegisterComponent},
                       {"path":"usercomplaint",component:UserComplaintComponent},
+                      {"path":"usercomplaintview",component:UserComplaintviewComponent},
                      ]
 
 @NgModule({
@@ -32,7 +34,8 @@ const myRoute:Routes=[{"path":"",component:AdminLoginComponent},
     AdminDashboardComponent,
     NavBarAdminComponent,
     NavBarUserComponent,
-    UserComplaintComponent
+    UserComplaintComponent,
+    UserComplaintviewComponent
   ],
   imports: [
     BrowserModule,
