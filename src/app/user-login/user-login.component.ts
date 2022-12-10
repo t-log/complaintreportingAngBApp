@@ -19,9 +19,9 @@ export class UserLoginComponent {
       (response:any)=>{
         
         if(response.status=="success"){
-          let userId=response.userid;
-          console.log(userId);
-          localStorage.setItem("userInfo",userId)
+          // let userId=response.userid;
+          console.log(response.userid);
+          localStorage.setItem("userInfo",response.userid)
           this.router.navigate(['/userprofile'])
         }
         else{
