@@ -1,18 +1,24 @@
-  <app-nav-bar-user></app-nav-bar-user>
-  <div class="container">
+<app-admin-dashboard></app-admin-dashboard>
+<div class="container">
     <div class="row mt-3">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <div class="row">
                 <table class="table">
                     <thead>
                       <tr>
+                        <th scope="col">Name:</th>
+                        <th scope="col">Email:</th>
+                        <th scope="col">Phone:</th>
                         <th scope="col">Complaint Id:</th>
                         <th scope="col">Complaint Description:</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr *ngFor="let i of complaintData">
-                        <th scope="row">{{i.id}}</th>
+                        <td>{{i.name}}</td>
+                        <td>{{i.email}}</td>
+                        <td>{{i.phone_no}}</td>
+                        <td>{{i.id}}</td>
                         <td>{{i.complaint}}</td>
                       </tr>
                     </tbody>

@@ -14,4 +14,6 @@ export class ApiService {
 
   addUserComplaint=(dataToSend:any)=>{return this.http.post("http://localhost:8080/addUserComplaint",dataToSend)}
   getUserComplaint=(dataToSend:any)=>{return this.http.post("http://localhost:8080/getUserComplaint",dataToSend)}
+
+  adminViewAll=()=>{return this.http.get("http://localhost:8080/adminviewallcomplaints")}
 }
